@@ -10,10 +10,12 @@ public class Main {
 
 		Concerto concerto1 = new Concerto("Bob Marley", LocalDate.of(2023, 7, 27), 2000, LocalTime.of(21, 30), new BigDecimal("80.99"));
 		Concerto concerto2 = new Concerto("Lady Gaga", LocalDate.of(2023, 8, 27), 2000, LocalTime.of(22, 30), new BigDecimal("60.50"));
+		Concerto concerto3 = new Concerto("Andrea Bocelli", LocalDate.of(2023, 6, 25), 2000, LocalTime.of(20, 30), new BigDecimal("90.50"));
         
 		ProgrammEventi pe1 = new ProgrammEventi("Eventi musicali estivi");
 		pe1.addEvent(concerto1);
 		pe1.addEvent(concerto2);
+		pe1.addEvent(concerto3);
 		System.out.println(pe1);
 		
 		Scanner sc = new Scanner(System.in);
