@@ -38,7 +38,7 @@ public class Main {
 
 				if (reservations > (evento.getNumberPlacesTotal() - evento.getNumberPlacesReserved())) {
 					System.out.println("Non ci sono abbastanza posti disponibili per effettuare le prenotazioni richieste.");
-					break;
+					continue;
 				}
 
 				numberReservations += reservations;
@@ -71,7 +71,7 @@ public class Main {
 
 				if (cancellations > numberReservations - numberCancellations) {
 					System.out.println("Non puoi disdire più prenotazioni di quelle effettuate.");
-					break;
+					continue;
 				}
 
 				numberCancellations += cancellations;
