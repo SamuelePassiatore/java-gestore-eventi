@@ -1,13 +1,18 @@
 package org.java.obj;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) throws Exception {
 
+		Concerto concerto = new Concerto("Bob Marley", LocalDate.of(2025, 05, 27), 2000, LocalTime.of(21, 30), new BigDecimal("80.99"));
+        System.out.println("Concerto creato: " + concerto.toString());
+        
 		Scanner sc = new Scanner(System.in);
-
+		
 		try {
 			System.out.println("Inserisci il titolo dell'evento: ");
 			String title = sc.nextLine();
